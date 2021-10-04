@@ -33,8 +33,8 @@ public class EXERC02 {
 		else if (num3>=num2 && num2>=num1) {
 			System.out.println("A ordem crescente é: "+num3+", "+num2+", "+num1);
 		}
-		else if (num3>=num2 && num2>=num1) {
-			System.out.println("A ordem crescente é: "+num3+", "+num2+", "+num1);
+		else if (num3>=num1 && num1>=num1) {
+			System.out.println("A ordem crescente é: "+num3+", "+num1+", "+num2);
 		}
 		
 	}
