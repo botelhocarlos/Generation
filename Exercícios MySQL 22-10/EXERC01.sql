@@ -16,4 +16,4 @@ select * from tb_funcionaries;
     
 select * from tb_funcionaries where salario > 2000;
 select * from tb_funcionaries where salario < 2000;
-update funcionaries set salario = 9500 where id = 5;
+update tb_funcionaries set salario = 9500 where id = 5;
