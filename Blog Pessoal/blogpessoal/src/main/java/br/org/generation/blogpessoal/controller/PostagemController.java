@@ -63,7 +63,7 @@ public class PostagemController {
 		return postagemRepository.findById(id)
 		.map(resposta -> {
 			postagemRepository.deleteById(id);
-			return ResponseEntity.ok().build();	
+			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		})
 		.orElse(ResponseEntity.notFound().build());
 		
