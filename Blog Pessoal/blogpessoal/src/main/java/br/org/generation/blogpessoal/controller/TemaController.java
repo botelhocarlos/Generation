@@ -26,6 +26,13 @@ public class TemaController {
 	@Autowired
 	private TemaRepository temaRepository;
 	
+	@GetMapping
+	public ResponseEntity<List<Tema>> getAll() {
+		return ResponseEntity.ok(temaRepository.findAll());
+
+	}
+
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<Tema> getById(@PathVariable long id){
 		return temaRepository.findById(id)
